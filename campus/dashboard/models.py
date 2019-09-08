@@ -5,7 +5,6 @@ from django.db.models.signals import post_save
 User=get_user_model()
 users=User.objects.all()
 
-
 # Create your models here.
 class UserLoggedIn(models.Model):
     user=models.ForeignKey(User,on_delete=models.CASCADE)

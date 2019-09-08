@@ -32,15 +32,21 @@ th.a{width:200px;}
     <th class="b">Team Name</th>
     <th class="c">Level</th>
   </tr>
-  {%for user in users%}
+{% for i in data %}
   <tr>
     <td>{{forloop.counter}}</td>
-    <td>{{user.username}}</td>
+    <td>{{i}}</td>
     <td>0</td>
   </tr>
   {%endfor%}
+  </table>
 
-</table>
+  <!-- <td>{{u.username}}</td> -->
+
+
+
+
+
      </div>
 
 
